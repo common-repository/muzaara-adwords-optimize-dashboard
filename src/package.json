@@ -1,0 +1,33 @@
+{
+  "name": "muzaara-reports",
+  "version": "1.0.0",
+  "description": "Muzaara reports",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack --show-progress --watch",
+    "build": "webpack --show-progress --config webpack.prod.js"
+  },
+  "author": "James John <me@donjajo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.2.0",
+    "css-loader": "^3.2.0",
+    "json-form-data": "^1.5.0",
+    "moment": "^2.24.0",
+    "numeral": "^2.0.6",
+    "path": "^0.12.7",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.1",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.6"
+  }
+}

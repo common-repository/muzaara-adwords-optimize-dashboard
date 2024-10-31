@@ -1,0 +1,440 @@
+@import 'icons.css';
+
+.muzaara {
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+	background: #fff;
+
+	box-shadow: 0 -5px 5px -5px #ccc, 0 5px 5px -5px #ccc;
+	padding: 20px 60px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	
+	border-top: 5px solid #E35A10;
+}
+
+.muzaara .login-btn {
+	background-image: url( "../images/btn_google_signin.png" );
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: transparent;
+	height: 60px;
+	width: 260px;
+	display: block;
+	cursor: pointer;
+	margin: auto;
+}
+
+.muzaara .login-btn:hover {
+	background-image: url( "../images/btn_google_signin_focus.png" );
+}
+
+.muzaara .account-listing {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	max-height: 300px;
+	overflow-y: scroll;
+	padding: 10px;	
+}
+
+.muzaara .account-listing li {
+	padding: 10px 15px;
+	position: relative;
+	cursor: pointer;
+	transition: background 0.5s;
+	border-radius: 10px;
+}
+
+
+.muzaara .account-listing li:hover {
+	background: #f5f5f5;
+	transition: background 0.5s;
+}
+
+.muzaara .account-listing li.is-selected {
+	background: #f5f5f5;
+}
+
+.muzaara .account-listing li.is-loading::after {
+	position: absolute;
+	right: 20px;
+	color: #E35A10;
+	content: "\e908";
+	display: inline;
+	font-family: Icomoon;
+  	animation-name: loading;
+  	animation-duration: 1s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function : linear;
+}
+
+span.is-loading {
+	animation-name: loading;
+  	animation-duration: 3s;
+  	display: inline-block;
+  	animation-iteration-count: infinite;
+  	animation-timing-function : linear;
+}
+
+.muzaara .account-listing li.is-selected::after {
+	position: absolute;
+	right: 20px;
+	color: #E35A10;
+	content: "\e907";
+	font-family: Icomoon;
+}
+
+.muzaara .api-error {
+	border-left: 4px solid #dc3232;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	padding: 10px 12px;
+}
+
+.muzaara .api-error span {
+	color: #dc3232;
+	font-size: 48px;
+}
+
+.muzaara .api-error h4 {
+	font-weight: normal;
+	margin: 0;
+}
+
+.muzaara-footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	padding-left: 15%;
+	margin-top: 50px;
+}
+
+.muzaara-footer a {
+	display: inline-block;
+	height: 120px;
+	width: 150px;
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: filter 0.5s;
+}
+
+.muzaara-footer a:first-child {
+	margin-right: 50px;
+}
+
+.muzaara-footer a:hover {
+	filter: none;
+	transition: filter 0.5s;
+}
+
+.muzaara-options {
+	position: absolute;
+	right: 30px;
+	top: 50px;
+}
+
+.muzaara-options a {
+	display: inline-block;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: large;
+}
+
+.muzaara-button {
+	border: none; background: #3399CC; color : #fff; padding: 10px 50px; box-shadow: 0px 0px 5px 0px #ccc; font-size: large;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.account-summary {
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	display: none;
+	background: #fff;
+	transition: transform 0.5s;
+	padding-bottom: 50px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.20);
+}
+
+.account-summary.show {
+	transform: translate(0,-95%);
+	display: block;
+	transition: transform 0.5s;
+}
+
+.account-summary .title {
+	background: #3399CC;
+	color: #fff;
+	padding: 30px;
+}
+
+.account-summary .linked-accounts {
+	list-style: none;
+	font-size: large;
+	margin-bottom: 30px;
+}
+
+.account-summary .linked-accounts li {
+	padding: 20px 20px;
+	padding-left: 70px;
+	position: relative;
+}
+
+.account-summary .linked-accounts li::before {
+	content : "\e90d";
+	font-family: 'icomoon';
+	font-size: 24px;
+	margin-right: 10px;
+	font-weight: bold;
+	color: #3399CC;
+	position: absolute;
+	bottom: 35%;
+	left: 3%;
+}
+
+.muzaara-select .select::after {
+	content : "\e90f";
+	font-family: 'icomoon';
+	margin-left: 5px;
+}
+
+.muzaara-select {
+	font-size: small;
+}
+
+.account-summary .linked-accounts li .data {
+	color: #888;
+	margin-left: 10px;
+}
+
+.muzaara-options a.help {
+	color: #E35A10;
+}
+
+#muzaara .inside {
+	margin: 0;
+	padding: 0;
+}
+
+.muzaara-widget .metrics {
+	position: relative;
+}
+
+.muzaara-widget .metrics .loading-reports {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255,255,255,0.70);
+	z-index: 1000000;
+}
+
+.muzaara.muzaara-widget {
+	width: 60%;
+	margin-top: 15%;
+	padding: 0;
+	text-align : left;
+	border-top: none;
+}
+.muzaara-widget .metrics .columns {
+	padding-bottom: 10px;
+	display: flex;
+	background: #fff;
+}
+
+.muzaara-widget .metrics .column {
+	width: 20%;
+	flex: 1;
+	display: inline-block;
+	padding: 5px;
+	float: left;
+	text-align: left;
+	height: 60px;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.5s;
+	border-right: 1px solid #ccc;
+}
+
+.muzaara-widget .metrics .column:last-child {
+	border-right: none;
+}
+
+.muzaara-widget .metrics .column .total {
+	font-weight: 300;
+	font-size: 20px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.muzaara-widget .metrics .column.disabled .total {
+	color: #666;
+}
+
+.muzaara-widget .selectric {
+	background : transparent;
+	border: none;
+}
+
+.muzaara-widget .selectric .label {
+	color: #fff;
+	display: inline-block;
+	height: auto;
+	border-bottom: 1px solid #fff;
+	margin: 0;
+	line-height: 200%;
+}
+
+.muzaara-widget .selectric .button {
+	display: none;
+}
+
+.muzaara-widget .selectric-items {
+	background: #fff;
+	border: none;
+	box-shadow: 5px 5px 5px -5px #ccc;
+}
+
+/*.muzaara-widget .metrics .column.red {
+	background-color: #d23f31;
+	transition: background-color 0.5s;
+}
+
+.muzaara-widget .metrics .column.blue {
+	background-color: #3b78e7;
+	transition: background-color 0.5s;
+}
+
+.muzaara-widget .metrics .column.orange {
+	background-color: #f2a600;
+	transition: background-color 0.5s;
+}
+
+.muzaara-widget .metrics .column.green {
+	background-color: #0d904f;
+	transition: background-color 0.5s;
+}
+
+.muzaara-widget .metrics .column.disabled {
+	background: #fff;
+	
+}*/
+
+.muzaara-widget .metrics .column.disabled .muzaara-select .select {
+	color: #666;
+}
+
+
+.muzaara-chart {
+	height: 300px;
+	width: 100%;
+}
+
+.dot {
+  display: inline-block;
+  border-radius: calc(24px/2);
+  width: 24px;
+  height: 24px;
+  margin: calc(16 * 24px / 50);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-animation: move 2s infinite;
+          animation: move 2s infinite;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.dot.small {
+	border-radius: calc(12px/2);
+	  width: 12px;
+	  height: 12px;
+	  margin: calc(16 * 12px / 50);
+}
+
+#blue {
+  background: #4285F4;
+  -webkit-animation-delay: calc(0.15s * 1);
+          animation-delay: calc(0.15s * 1);
+}
+
+#red {
+  background: #DB4437;
+  -webkit-animation-delay: calc(0.15s * 2);
+          animation-delay: calc(0.15s * 2);
+}
+
+#yellow {
+  background: #F4B400;
+  -webkit-animation-delay: calc(0.15s * 3);
+          animation-delay: calc(0.15s * 3);
+}
+
+#green {
+  background: #0F9D58;
+  -webkit-animation-delay: calc(0.15s * 4);
+          animation-delay: calc(0.15s * 4);
+}
+
+.dot-container {
+  display: none;
+  text-align: center;
+  
+  width: intrinsic;
+  
+  -webkit-transform: translateX(0%) translateY(0%) translateZ(0);
+          transform: translateX(0%) translateY(0%) translateZ(0);
+}
+
+@-webkit-keyframes move {
+  50% {
+    -webkit-transform: translateY(calc(-24 * 24px / 50));
+            transform: translateY(calc(-24 * 24px / 50));
+  }
+}
+
+@keyframes move {
+  50% {
+    -webkit-transform: translateY(calc(-24 * 24px / 50));
+            transform: translateY(calc(-24 * 24px / 50));
+  }
+}
+
+
+@-webkit-keyframes loading {
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+/* Standard syntax */
+@keyframes loading {
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

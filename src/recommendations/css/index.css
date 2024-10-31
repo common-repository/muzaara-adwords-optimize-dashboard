@@ -1,0 +1,97 @@
+.muzaara-recommendations {
+	
+}
+
+.recommendation-title {
+	background: #fff;
+	margin: 0;
+	padding: 20px 5px;
+	margin-bottom: 10px;
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.20);
+}
+
+.muzaara-recommendations .recommendation {
+	width: 50%;
+	float: left;
+	background: #fff;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.20);
+	border-radius: 2px;
+}
+
+.muzaara-recommendations .recommendation:nth-child(odd) {
+	margin-right: 1%;
+	width: 49%;
+}
+
+
+.muzaara-recommendations .recommendation header {
+	margin-bottom: 10px;
+	padding: 10px 10px;
+	text-transform: uppercase;
+}
+
+.muzaara-recommendations .recommendation .info {
+	font-style: italic;
+	display: block;
+	padding: 0 10px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+.muzaara-recommendations .recommendation p {
+	font-weight: bold;
+	padding: 0 10px;
+}
+
+.muzaara-recommendations .recommendation section {
+	margin-top: 10px;
+	padding: 0px 10px;
+}
+
+.muzaara-recommendations .recommendation .actions {
+	border-top: 1px solid #ccc;
+	padding: 2px;
+	transition: background 0.5s;
+}
+
+.muzaara-recommendations .recommendation .actions.is-edit {
+	background: #4285F4;
+	border: none;
+	transition: background 0.5s;
+}
+
+.muzaara-recommendations .recommendation .actions::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.muzaara-recommendations .recommendation .actions a {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #4285f4;
+	padding: 10px 10px; 	
+	display: inline-block;
+	cursor: pointer;
+}
+
+.muzaara-recommendations .recommendation .actions.is-edit a {
+	color: #fff;
+}
+
+.muzaara-recommendations .recommendation .actions:not(.is-edit) a:hover {
+	background: #E7EFFD;
+	
+}
+
+.muzaara-recommendations .recommendation .actions a.view {
+	float: left;
+}
+
+.muzaara-recommendations .recommendation .actions a.apply {
+	float: right;
+}
+
+.muzaara-recommendations .recommendation .actions a.apply.is-applying {
+	opacity: 0.5;
+}

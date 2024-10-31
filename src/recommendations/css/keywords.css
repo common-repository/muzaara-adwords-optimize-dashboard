@@ -1,0 +1,27 @@
+.muzaara-recommendations .recommendation .keywords {
+	list-style: none;
+}
+
+.muzaara-recommendations .recommendation .keywords::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.muzaara-recommendations .recommendation .keywords .keyword {
+	 display: inline-block;
+	 margin-right: 5px;
+	 float: left;
+	 border-radius: 20px;
+	 padding: 5px 15px;
+	 border: 2px solid #3B78E7;
+}
+
+.muzaara-recommendations .recommendation .keywords .keyword.more {
+	border-color: #ccc;
+}
+
+.muzaara-recommendations .recommendation .muzaara-select .select {
+	border-color: #ccc;
+	color : #333;
+}
